@@ -11,8 +11,8 @@ function addTask(){
     let taskin=document.getElementById("task");
     let text =taskin.value;
     if(text===""){
-        task.push("No Task Entered")
-        localStorage.setItem("task", JSON.stringify(task));
+        alert("please enter the task");
+        return
     }
     task.push(text);
     taskin.value="";
